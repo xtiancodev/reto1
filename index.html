@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+    <style> 
+    * {
+      font-family: "Nunito";
+      margin: 0;
+      padding: 0;
+    }
+    main {
+        height: 600px;
+        width: 400px;
+        border-radius: 24px;
+        background-color: #f8f9fe;
+    }
+    
+    #chica {
+        width: 400px;
+        border-radius: 24px 24px 0 0;
+    }
+    
+    #box1 {
+        padding: 40px 40px 20px;
+        text-align: center;
+        color: #2b2a39;
+    }
+    
+    #order {
+        font-weight: 950;
+        color: #2b2a39;
+        margin-bottom: 15px;
+    }
+
+    #box1 p {
+        color: #8a8a8a;
+        font-weight: 500;
+        line-height: 1.6;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    
+    #box2 {
+        margin: 0 40px;
+        padding: 20px;
+        background-color: #f8f9fe;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .plan-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    #container-nota {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: #dee2f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    #nota {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        filter: brightness(0.5) sepia(1) hue-rotate(200deg) saturate(150%);
+    }
+    
+    .plan-details {
+        text-align:left;
+    }
+    
+    .plan-details h2 {
+        font-size: 16px;
+        font-weight: 900;
+        color: #2b2a39;
+        margin-bottom: 5px;
+    }
+    
+    .plan-details div {
+        color: #8a8a8a;
+        font-size: 14px;
+    }
+    
+    #box2 a {
+        color: #1F27BF;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: underline;
+    }
+    
+    #payment {
+        width: 80%;
+        height: 48px;
+        margin: 30px auto 15px;
+        display: block;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        background-color: #1F27BF;
+        font-weight: 700;
+        letter-spacing: 1px;
+        box-shadow: 0px 20px 20px rgba(31, 39, 191, 0.15);
+        cursor: pointer;
+    }
+    
+    #cancel {
+        display: block;
+        width: 100%;
+        border: none;
+        background: none;
+        color: #8a8a8a;
+        font-weight: 700;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <img id="chica" src="https://filarrro-order-summary.netlify.app/illustration-hero.0138757b.svg" alt="">
+        </div>
+        <section id="box1">
+            <h1 id="order">Order Summary</h1>
+            <p>You can now listen to millions of songs,
+                audiobooks, and podcasts on any device 
+                anywhere you like!</p>
+        </section>
+        <section id="box2">
+            <div class="plan-info">
+                <div id="container-nota">
+                    <img id="nota" src="https://st.depositphotos.com/1472772/1587/i/450/depositphotos_15878863-stock-photo-music-note-3d-icon-on.jpg" alt="">
+                </div>
+                <div class="plan-details">
+                    <h2>Annual Plan</h2>
+                    <div>$59.99/year</div>
+                </div>
+            </div>
+            <a href="https://i.pinimg.com/736x/18/0e/fc/180efc3227b70e92b88fd3e71826fbad.jpg" target='blank'>Change</a>
+        </section>
+        
+        <button id="payment">Proceed to Payment</button>
+        <button id="cancel">Cancel Order</button>
+    </main> 
+</body>
+</html>
